@@ -66,26 +66,24 @@
       }
 
       #bottom {
+        display: flex;
+        flex-direction: column;
         width: 100%;
         height: 55%;
         color: white;
       }
       #left {
-        display: inline-block;
-        width: 100%;
         height: 100%;
-        vertical-align: top;
         background-color: #2ab2af;
         padding: 25px;
+        flex-basis: 50%;
       }
 
       #right {
-        display: inline-block;
-        width: 100%;
         height: 100%;
-        vertical-align: top;
         background-color: #2ebfbd;
         padding: 25px;
+        flex-basis: 50%;
       }
 
       #top h2 {
@@ -140,21 +138,16 @@
         margin-bottom: 20px;
       }
 
-      #month,
-      #price {
-        display: inline-block;
-      }
-
       #price-container {
+        display: flex;
+        align-items: center;
         margin-bottom: 10px;
       }
 
       #month {
-        position: relative;
-        top: -3px;
         font-size: 0.8rem;
         opacity: 0.7;
-        margin-left: 5px;
+        margin-left: 8px;
       }
 
       ul {
@@ -208,9 +201,8 @@
           height: 400px;
         }
 
-        #left,
-        #right {
-          width: 50%;
+        #bottom {
+          flex-direction: row;
         }
       }
     </style>
@@ -237,8 +229,9 @@
             <div id="month">per month</div>
           </div>
           <p>Full access for less than $1 a day</p>
-          <button onclick="alertUser()">Sign Up</button> </div
-        ><div id="right">
+          <button onclick="alertUser()">Sign Up</button>
+        </div>
+        <div id="right">
           <h4>Why Us</h4>
           <ul>
             <li>Tutorials by industry experts</li>
@@ -257,15 +250,11 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-<<<<<<< HEAD
         >. Coded by
         <a
           href="https://github.com/DanielLuca25/CSS-Price-Card-Challange/tree/gh-pages"
           >Luca Daniel</a
         >
-=======
-        >. Coded by <a href="https://github.com/DanielLuca25/CSS-Price-Card-Challange/tree/gh-pages">Luca Daniel</a>
->>>>>>> 31d7236eb1967b7bb1752f23a13bff0609190379
       </p>
     </footer>
 
